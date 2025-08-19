@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "grapher": "github:bks1b/grapher"
+  },
+  "devDependencies": {
+    "webpack": "^5.87.0"
+  }
+}
