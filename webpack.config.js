@@ -1,12 +1,11 @@
-const { join } = require('path');
+import { join } from 'path';
+import { readdirSync } from 'fs';
 
-module.exports = [{
-    mode: 'none',
-    entry: join(process.cwd(), '_grapher.js'),
+export default [{
+    entry: Object.fromEntries(readdirSync('src').map(k => [k, join(process.cwd(), 'src', k)])),
     target: 'web',
-    resolve: { extensions: ['.js'] },
     output: {
-        filename: 'index.js',
+        filename: 'build/[name]',
         path: process.cwd(),
     },
 }];
