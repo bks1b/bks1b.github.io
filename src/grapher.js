@@ -1,5 +1,5 @@
-import * as two from 'grapher/dist/src/two/grapher';
-import * as three from 'grapher/dist/src/three';
+import * as two from 'grapher/dist/src/two/grapher/index.js';
+import * as three from 'grapher/dist/src/three/index.js';
 
 new two.Grapher2(cont1, [two.vectorField((x, y) => {
     const s = 5;
