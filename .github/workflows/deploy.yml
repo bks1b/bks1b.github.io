@@ -10,8 +10,7 @@ jobs:
         with:
           node-version: latest
       - run: npm i
-      - run: webpack
-      - run: cp -r static/* build
+      - run: npm run build
       - uses: crazy-max/ghaction-github-pages@v4.2.0
         with:
           build_dir: build

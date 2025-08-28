@@ -1,13 +1,18 @@
 {
   "type": "module",
   "scripts": {
-    "test": "webpack && xcopy static build /s /y"
+    "build": "webpack && node build"
   },
   "dependencies": {
-    "grapher": "github:bks1b/grapher"
+    "grapher": "github:bks1b/grapher",
+    "react": "^19.1.1",
+    "react-documents": "github:bks1b/react-documents",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "webpack": "^5.87.0",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1"
   }
 }
