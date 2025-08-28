@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektek</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Image CLI</h1>
+        <div class="project">
+            <p>Egy képfeldolgozásra írt parancssoros felület</p>
+            <details>
+                <summary>Példák</summary>
+                <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/image-cli/main/readme/output/sketch.png">
+                <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/image-cli/main/readme/output/ascii.png">
+                <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/image-cli/main/readme/output/spiral.png">
+                <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/image-cli/main/readme/output/chart.png">
+                <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/image-cli/main/readme/output/field.png">
+                <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/image-cli/main/readme/output/circle.png">
+            </details>
+            <p><a href="https://github.com/bks1b/image-cli">Forráskód</a></p>
+        </div>
+        <h1>Grapher</h1>
+        <div class="project">
+            <p>Egy interaktív matematikai ábrázoló könyvtár</p>
+            <details>
+                <summary>2D vektormező</summary>
+                <div class="cont" id="cont1"></div>
+            </details>
+            <details>
+                <summary>3D vonalintegrál</summary>
+                <div class="cont" id="cont2"></div>
+            </details>
+            <details>
+                <summary>2D függvény</summary>
+                <div class="cont" id="cont3"></div>
+            </details>
+            <p><a href="https://github.com/bks1b/grapher">Forráskód</a></p>
+        </div>
+        <h1>Haskell XML</h1>
+        <div class="project">
+            <p>Egy XML elemző Haskell-ben</p>
+            <p><a href="https://github.com/bks1b/haskell-xml">Forráskód</a></p>
+        </div>
+        <h1>L-ang</h1>
+        <div class="project">
+            <p>Egy programnyelv képek generálására L-rendszerekből</p>
+            <details>
+                <summary>Példák</summary>
+                <div class="example">
+                    <pre>rules {
+    X: Y+X+Y
+    Y: X-Y-X
+}
+operations {
+    X, Y: line(10)
+    +: rotate_counter(60)
+    -: rotate(60)
+}
+axiom: X
+iterations: 7</pre>
+                    <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/l-ang/refs/heads/main/test/res/sierpinski_ah.png">
+                </div>
+                <div class="example">
+                    <pre>rules {
+    F(x): X(x)F(add(x, 1))X(x)F(add(x, 2))repeat(X(subtract(x,1)),2)
+}
+operations {
+    X(x) {
+        stroke_color(rgb(random_num(0, 200), random_num(50, 255), random_num(50, 255)))
+        line_width(random_num(0.5, 3))
+        line(pow(x, random_num(1, 2)))
+        rotate(pow(x, 1.1))
+    }
+}
+init: background(#cfd)
+axiom: F(1)
+iterations: 11</pre>
+                    <img loading="lazy" src="https://raw.githubusercontent.com/bks1b/l-ang/refs/heads/main/test/res/test.png">
+                </div>
+            </details>
+            <p><a href="https://github.com/bks1b/l-ang">Forráskód</a></p>
+        </div>
+        <h1>Tower Shooter</h1>
+        <div class="project">
+            <p>Egy belső nézetes lövöldözős játék</p>
+            <details>
+                <summary>Videó</summary>
+                <iframe src="https://www.youtube.com/embed/zon3beyjW5o" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </details>
+            <p><a href="https://github.com/bks1b/tower-shooter">Forráskód</a>, <a href="https://tower-shooter.onrender.com">játék</a></p>
+        </div>
+        <h1>Guitar Solos</h1>
+        <div class="project">
+            <p>Egy weboldal gitárszólók feltöltésére és értékelésére</p>
+            <p><a href="https://github.com/bks1b/guitar-solos">Forráskód</a>, <a href="https://guitar-solos.onrender.com">weboldal</a></p>
+        </div>
+        <h1>Feladványok</h1>
+        <div class="project">
+            <p>Kisebb feladványok (pl. AoC, Project Euler) megoldásait <a href="https://github.com/bks1b/puzzles/tree/main/puzzles">ebben a repository-ban</a> tartom</p>
+        </div>
+        <script src="grapher.js"></script>
+    </body>
+</html>
