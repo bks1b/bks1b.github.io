@@ -1,0 +1,61 @@
+body {
+    font-family: "Segoe UI", Arial;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.project {
+    margin: 0 30px;
+}
+
+p, details {
+    margin: 3px 0;
+}
+
+details {
+    max-width: 100%;
+    text-align: center;
+}
+
+summary {
+    text-align: left;
+}
+
+details > img {
+    max-width: 475px;
+    vertical-align: middle;
+}
+
+.cont {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+.example {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 60px;
+    margin-bottom: 12px;
+}
+
+.example img {
+    width: 400px;
+}
+
+pre {
+    border: 1px solid black;
+    padding: 6px;
+}

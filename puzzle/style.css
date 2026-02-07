@@ -1,0 +1,19 @@
+body {
+    display: flex;
+}
+
+#root {
+    border: 1px solid black;
+    padding: 8px;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    max-width: calc(100vw - 16px);
+    max-height: calc(100vh - 16px);
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+:not(.inlineMath) > .katex-display .katex-html {
+    padding: 0 70px;
+}
